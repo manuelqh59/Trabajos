@@ -1,0 +1,176 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+header{
+    background-color: black;
+    font-size: 1.5em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+ul{
+    display: flex;
+    margin:0 10px 0 0;
+    padding: 0;
+    list-style: none;
+}
+
+li a{
+    display: block;
+    color: white;
+    padding: 20px;
+    text-decoration: none;
+}
+
+li a:hover{
+    color: rgb(233, 46, 46);
+}
+
+.logo{
+    margin-left: 60px;
+    margin-top: 10px;
+}
+
+#logo{
+    width: 500px;
+    height: 70px;
+}
+
+#item{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.producto{
+    box-shadow: 0px 0px 12px 0px rgba(0,0,0,0.14);
+    margin: 20px;
+    padding: 20px;
+    width: 400px;
+    height: 520px;
+}
+
+.producto:hover{
+    box-shadow: 0px 0px 25px 0px rgba(0, 0, 0, 0.39);
+    transition: 0.5s;
+}
+.producto:hover::before{
+    transition: 1s;
+}
+
+/* Asignamos el tamaño a la imagen y la centramos */
+.producto-imagen{
+    width: 355px;
+    height: 355px;
+    display: block;
+    margin: auto;
+}
+
+.producto-titulo{
+    margin-left: 20px;
+}
+
+.producto-descripcion{
+    margin-left: 20px;
+}
+
+.producto-precio{
+    display: inline-flex;
+    font-size: 1.5em;
+    margin-left: 20px;
+}
+
+.boton{
+    padding: 15px;
+    border-radius: 10%;
+    background-color: rgba(255, 255, 255, 0.838);
+    box-shadow: 0px 0px 12px 0px rgba(0,0,0,0.14);
+    border: none;
+    color: black;
+    margin-left: 200px;
+    margin-bottom:10px;
+    font-size: 0.7em;
+}
+.boton:hover{
+    box-shadow: 0px 0px 12px 0px rgba(0,0,0,0.50);
+    transition: 0.5s;
+}
+.boton:active{
+    color: white;
+    background-color: black;
+
+}
+
+
+/* Ponemos posicion absolta para que se vaya ajustando al contenido y lo posicionamos arriba a la derecha */
+#oculto{
+    display: inline-block;
+    position: absolute;
+    right: 20px;
+    top: 100px;
+    width: 400px;
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.3);
+    padding:10px 20px ;
+    background-color: white;
+}
+
+#carrito{
+    margin-left: 20px;
+    display: inline;
+}
+
+.producto-comprado{
+    display: flex;
+    align-items: center;
+    color: black;
+    font-size: 1.2em;
+    margin-bottom: 30px;
+}
+
+.imagenCarrito{
+    width: 60px;
+}
+
+.textoCarrito{
+    margin-left: 10px;
+}
+
+
+.botonBorrar{
+    padding: 5px;
+    margin-left: 50px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    background-color: white;
+    border: none;
+    box-shadow: 4px 4px 2px 0px rgba(0,0,0,0.37);
+}
+.botonBorrar:hover{
+    background-color: black;
+    color: white;
+}
+
+.total{
+    font-size: 1.5em;
+}
+
+#vaciar{
+    font-size: 1.2em;
+    background-color: black;
+    color: white;
+    width: 100%;
+    height: 60px;
+    border-radius: 10px;
+    box-shadow: 10px 10px 5px 0px rgba(209,209,209,1);
+}
+
+footer{
+    display: flex;
+    background-color: black;
+    color: white;
+    margin-bottom: 0;
+}
