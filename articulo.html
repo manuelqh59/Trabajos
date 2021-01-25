@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/3b3ff89789.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="estilos.css">
+    <title>Home</title>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img id="logo" src="imagenes/logo.gif" alt="logo empresa">
+        </div>
+        <nav>
+            <ul>
+		<p>Git</p>
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#">Sobre nosotros</a></li>
+                <li><a href="#">Categorias</a></li>
+                <li id="botonMenu"><a href="#"><i class="fas fa-shopping-basket"></i></a></li>
+            </ul>
+        </nav>
+    </header>
+    <section id="item"></section>
+    <section id="oculto">
+        <h2>Cesta</h2>
+        <ul id="carrito"></ul>
+        <p class="total">Total: <span id="total"></span>€</p>
+        <button id="vaciar">Vaciar cesta</button>
+    </section>
+    <section id="prueba"></section>
+    <footer>
+        <p>© Manuel Quintana Huerta</p>
+    </footer>
+    <script src="productos.js" ></script>
+</body>
+</html>
